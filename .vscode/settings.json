@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "default",
+            "database": "${workspaceFolder:residencial-api}/database.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

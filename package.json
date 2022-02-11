@@ -1,0 +1,36 @@
+{
+  "name": "residencial-api",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "migration:create": "typeorm migration:create -n",
+    "migration:generate": "ts-node --transpile-only ./node_modules/typeorm/cli.js migration:generate -n",
+    "migration:run": "ts-node --transpile-only ./node_modules/typeorm/cli.js migration:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.34"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@types/jsonwebtoken": "^8.5.3",
+    "@types/morgan": "^1.9.2",
+    "@types/node": "^16.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.9",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  }
+}
